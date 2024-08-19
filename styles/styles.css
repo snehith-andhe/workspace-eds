@@ -12,12 +12,19 @@
 
 :root {
   /* colors */
-  --background-color: cyan;
+  --background-color: white;
   --light-color: #f8f8f8;
   --dark-color: #505050;
   --text-color: magenta;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
+  --text-color: #131313;
+  --link-color: #9f2b68;
+  --link-hover-color: #9f2b68;
+  --text-color-magenta: #9f2b68;
+  --text-title-color: white;
+  --bg-color: #e0ffff;
+
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
@@ -73,7 +80,7 @@
 body {
   display: none;
   margin: 0;
-  background-color: var(--background-color);
+  background-color: var(--bg-color);
   color: var(--text-color);
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
@@ -113,8 +120,13 @@ h6 {
 }
 
 h1 { font-size: var(--heading-font-size-xxl); }
-h2 { font-size: var(--heading-font-size-xl); }
-h3 { font-size: var(--heading-font-size-l); }
+h2 { 
+  font-size: var(--heading-font-size-xl);
+}
+h3
+ { font-size: var(--heading-font-size-l); 
+   color: var(--text-title-color);
+   }
 h4 { font-size: var(--heading-font-size-m); }
 h5 { font-size: var(--heading-font-size-s); }
 h6 { font-size: var(--heading-font-size-xs); }
@@ -127,6 +139,7 @@ pre,
 blockquote {
   margin-top: 0.8em;
   margin-bottom: 0.25em;
+  color: var(--text-color-magenta);
 }
 
 code,
